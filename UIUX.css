@@ -1,0 +1,248 @@
+nav {
+    background-color: #000000;
+    color: rgb(54, 47, 255);
+    padding: 0px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 加陰影讓它更有層次 */
+}
+
+/* 🌟 設定 LOGO 樣式 */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 120px;
+}
+
+/* 🌟 設定導覽連結 */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin-right: 120px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(233, 239, 255);
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.3); /* 滑鼠懸停時變亮 */
+    color: #ffffff; /* 滑鼠懸停時變藍色 */
+    transform: scale(1.05); /* 滑鼠懸停時放大 */
+}
+main {
+    padding-top: 100px; /* 根據你的 nav 高度調整 */
+    padding-bottom: 80px; /* 預留空間避免 footer 壓住 */
+  }
+body {
+    background-image: url('image/6008366_3097149-01.png'); /* 設定背景圖片 */
+    background-size: cover; /* 讓圖片覆蓋整個頁面 */
+    background-repeat: no-repeat; /* 防止圖片重複 */
+    background-position: center; /* 將圖片置中 */
+    height: 100vh; /* 設定頁面高度 */
+    margin: 0; /* 移除預設的頁面邊距 */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 15%;
+}
+model-viewer {
+    width: 50%;  /* 讓 3D 模型自適應父容器 */
+    max-width: 30%;  /* 設定最大寬度，避免過大 */
+    height: auto;  /* 保持寬高比例 */
+}
+#theform{
+    background-color: rgba(0, 0, 0, 0.5); /* 設定表單區域背景顏色 */
+    border: #84ceff 2px solid; /* 設定邊框顏色 */
+    box-shadow: 0 0 15px rgba(144, 179, 255, 0.7); /* 設定陰影 */
+    display: flex;
+    flex-direction: column;
+    justify-content: start; /* 垂直置中 */
+    align-items: center; /* 水平置中 */
+    height: 60%; 
+    width: 100%;
+    border-radius: 32px; /* 圓角外框 */
+    padding: 5%;
+}
+#theform h1{
+    font-size: 36px;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 3px rgb(74, 255, 249), 0 0 3px #bbb;
+}
+#theform p{
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 0 0 3px rgb(74, 255, 249), 0 0 3px #bbb;
+}
+#name{
+    width: 380px;
+}
+#email{
+    width: 380px;
+}
+.form-A{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* 水平置中 */
+    gap: 8px; /* 設定表單項目之間的間距 */ 
+}
+.form-A label{
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow: 0 0 3px rgb(74, 255, 249), 0 0 3px #bbb;
+}
+.form-A input{
+    background-color: #ffffff;
+    width: 160px; /* 設定輸入框寬度 */
+    height: 16px; /* 設定輸入框高度 */
+    font-size: 16px; /* 設定字體大小 */
+    padding: 10px; /* 設定內邊距 */
+    border-radius: 16px; /* 圓角外框 */
+    border: 2px solid #007BFF; /* 外框顏色為藍色 */
+    box-shadow: 0 0 3px rgb(74, 255, 249), 0 0 3px #bbb;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start; /* 水平置中 */
+    gap: 8px; /* 設定表單項目之間的間距 */ 
+    margin: 8px;
+}
+.password-group{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+    input[type="insert-password"] {
+        margin-right: 20px;
+    }
+.date-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+input[type="radio"] {
+    appearance: none; /* 移除預設的勾選框外觀 */
+    -webkit-appearance: none; /* 針對 Webkit 瀏覽器 */
+    -moz-appearance: none; /* 針對 Firefox 瀏覽器 */
+    width: 16px; /* 設定寬度 */
+    height: 16px; /* 設定高度 */
+    margin: 0 10px; /* 增加間距 */
+    border: 2px solid #007BFF; /* 外框顏色 */
+    border-radius: 50%; /* 圓形外框 */
+    background-color: white; /* 背景顏色 */
+    position: relative;
+    align-items: center;
+}
+            
+input[type="radio"]:checked {
+    background-color: #007BFF; /* 勾選時的背景顏色 */
+    border-color: #0056b3; /* 勾選時的邊框顏色 */
+}
+            
+input[type="radio"]:checked::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: white; /* 勾選時的內部顏色 */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+.form-A button{
+    width: 400px;
+    background-color: #427eff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgb(74, 255, 249), 0 0 3px #bbb;
+    margin: 12px;
+}
+.form-A button:hover{
+    background-color: #25aee4;
+    transform: scale(1.05);
+}
+.password-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#birthday{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px; /* 設定表單項目之間的間距 */
+
+}
+.date-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* 設定表單項目之間的間距 */
+}
+.gender-group{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 8px; /* 設定表單項目之間的間距 */
+}
+select{
+    width: 80px; /* 設定下拉選單寬度 */
+    height: 16px; /* 設定下拉選單高度 */
+    font-size: 12px; /* 設定字體大小 */
+    padding: 10px; /* 設定內邊距 */
+    border-radius: 16px; /* 圓角外框 */
+    border: 2px solid #007BFF; /* 外框顏色為藍色 */
+    box-shadow: 0 0 3px rgb(74, 255, 249), 0 0 3px #bbb;
+}
+footer
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
